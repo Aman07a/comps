@@ -11,7 +11,8 @@ const routes: Routes = [
     path: 'collections',
     component: CollectionsHomeComponent,
     children: [
-      { path: '', component: BiographyComponent },
+      { path: '', redirectTo: 'biography', pathMatch: 'full' },
+      { path: 'biography', component: BiographyComponent },
       { path: 'companies', component: CompaniesComponent },
       { path: 'partners', component: PartnersComponent },
     ],
