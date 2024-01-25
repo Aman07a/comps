@@ -8,11 +8,10 @@ import { PartnersComponent } from './partners/partners.component';
 
 const routes: Routes = [
   {
-    path: 'collections',
+    path: '',
     component: CollectionsHomeComponent,
     children: [
-      { path: '', redirectTo: 'biography', pathMatch: 'full' },
-      { path: 'biography', component: BiographyComponent },
+      { path: '', component: BiographyComponent },
       { path: 'companies', component: CompaniesComponent },
       { path: 'partners', component: PartnersComponent },
     ],
