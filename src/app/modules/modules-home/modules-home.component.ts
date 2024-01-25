@@ -6,7 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./modules-home.component.css'],
 })
 export class ModulesHomeComponent implements OnInit {
+  modalOpen = false;
+
   constructor() {}
 
   ngOnInit() {}
+
+  onClick() {
+    this.modalOpen = !this.modalOpen;
+  }
 }
